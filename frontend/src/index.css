@@ -162,28 +162,83 @@ textarea:focus-visible {
   @apply outline-none ring-2 ring-slate-200 ring-offset-2;
 }
 
-
 /* Keep form controls inside their containers on every screen size. */
-input, select, textarea {
+input,
+select,
+textarea {
   box-sizing: border-box;
   max-width: 100%;
 }
 
+/* CampusCare black and white theme */
+.bg-indigo-600,
+.bg-indigo-700,
+.bg-indigo-800,
+.bg-violet-700,
+.bg-violet-800,
+.bg-sky-700 {
+  background-color: #000 !important;
+}
 
-/* CampusFix black and white theme */
-.bg-indigo-600, .bg-indigo-700, .bg-indigo-800, .bg-violet-700, .bg-violet-800, .bg-sky-700 { background-color: #000 !important; }
-.hover\:bg-indigo-700:hover, .hover\:bg-indigo-800:hover, .hover\:bg-violet-800:hover, .hover\:bg-indigo-500:hover { background-color: #262626 !important; }
-.text-indigo-500, .text-indigo-600, .text-indigo-700, .text-violet-700, .text-violet-100, .text-sky-700 { color: #000 !important; }
-.border-indigo-100, .border-indigo-200, .border-indigo-300, .border-violet-200 { border-color: #d4d4d4 !important; }
-.bg-indigo-50, .bg-violet-50, .bg-violet-100 { background-color: #f5f5f5 !important; }
-.focus\:border-indigo-400:focus, .focus\:border-indigo-500:focus { border-color: #000 !important; }
-.focus\:ring-indigo-50:focus { --tw-ring-color: #e5e5e5 !important; }
-.shadow-violet-700\/20 { --tw-shadow-color: rgba(0,0,0,.2) !important; }
+.hover\:bg-indigo-700:hover,
+.hover\:bg-indigo-800:hover,
+.hover\:bg-violet-800:hover,
+.hover\:bg-indigo-500:hover {
+  background-color: #262626 !important;
+}
+
+.text-indigo-500,
+.text-indigo-600,
+.text-indigo-700,
+.text-violet-700,
+.text-violet-100,
+.text-sky-700 {
+  color: #000 !important;
+}
+
+.border-indigo-100,
+.border-indigo-200,
+.border-indigo-300,
+.border-violet-200 {
+  border-color: #d4d4d4 !important;
+}
+
+.bg-indigo-50,
+.bg-violet-50,
+.bg-violet-100 {
+  background-color: #f5f5f5 !important;
+}
+
+.focus\:border-indigo-400:focus,
+.focus\:border-indigo-500:focus {
+  border-color: #000 !important;
+}
+
+.focus\:ring-indigo-50:focus {
+  --tw-ring-color: #e5e5e5 !important;
+}
+
+.shadow-violet-700\/20 {
+  --tw-shadow-color: rgba(0, 0, 0, .2) !important;
+}
 
 /* Keep every form control inside its container */
-.auth-input, .simple-input, .filter-select, input, select, textarea {
+.auth-input,
+.simple-input,
+.filter-select,
+input,
+select,
+textarea {
   width: 100%;
   max-width: 100%;
   min-width: 0;
   box-sizing: border-box;
+}
+
+
+/* Make shared panels readable */
+.glass-panel {
+  background: #ffffff !important;
+  color: #0f172a;
+  border-color: #e2e8f0 !important;
 }

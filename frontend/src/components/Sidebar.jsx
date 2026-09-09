@@ -118,7 +118,7 @@ export const Sidebar = () => {
   return (
     <aside className="w-full md:w-64 shrink-0">
       <div className="glass-panel rounded-2xl p-3 border border-slate-200 sticky top-20 shadow-sm bg-white">
-        <div className="px-3 py-2 text-[11px] font-bold tracking-wider text-slate-400 uppercase flex items-center justify-between">
+        <div className="px-3 py-2 text-[11px] font-bold tracking-wider text-slate-600 uppercase flex items-center justify-between">
           <span>{userRole} Workspace</span>
         </div>
 

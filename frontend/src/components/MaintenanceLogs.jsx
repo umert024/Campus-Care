@@ -28,8 +28,8 @@ export const MaintenanceLogs = () => {
     <div className="space-y-6">
       
       <div className="glass-panel p-5 rounded-2xl border border-slate-800/80">
-        <h2 className="text-xl font-bold text-white">Campus Maintenance & Audit Logs</h2>
-        <p className="text-xs text-slate-400 mt-1">
+        <h2 className="text-xl font-bold text-slate-900">Campus Maintenance & Audit Logs</h2>
+        <p className="text-xs text-slate-600 mt-1">
           Chronological timeline of infrastructure breakdown reports, technician updates, and repair resolutions.
         </p>
       </div>
@@ -48,7 +48,7 @@ export const MaintenanceLogs = () => {
                     <span className="font-mono text-xs font-bold text-indigo-400">
                       {log.ticketId}
                     </span>
-                    <span className="text-xs font-bold text-white">
+                    <span className="text-xs font-bold text-slate-900">
                       Room {log.roomNumber} ({log.equipmentType})
                     </span>
                     <span className="px-2 py-0.5 text-[10px] font-semibold rounded bg-slate-800 text-slate-300">

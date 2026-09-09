@@ -64,14 +64,14 @@ export const InventoryCatalog = () => {
       <div className="glass-panel p-5 rounded-2xl border border-slate-800/80">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
-            <h2 className="text-xl font-bold text-white">Campus Infrastructure Catalog</h2>
-            <p className="text-xs text-slate-400 mt-1">
+            <h2 className="text-xl font-bold text-slate-900">Campus Infrastructure Catalog</h2>
+            <p className="text-xs text-slate-600 mt-1">
               Complete inventory of Classrooms, Labs, Projectors, ACs, Fans, Computers, Benches, and Electrical Units.
             </p>
           </div>
 
           <div className="flex items-center gap-3">
-            <span className="text-xs text-slate-400 font-medium">
+            <span className="text-xs text-slate-600 font-medium">
               Showing <strong className="text-indigo-400">{filteredEquipment.length}</strong> of {equipment.length} Assets
             </span>
           </div>
@@ -80,7 +80,7 @@ export const InventoryCatalog = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4 pt-4 border-t border-slate-800/80 text-xs">
           
           <div>
-            <label className="block text-slate-400 mb-1 font-medium">Equipment Type</label>
+            <label className="block text-slate-700 mb-1 font-medium">Equipment Type</label>
             <select
               value={equipmentFilter}
               onChange={(e) => setEquipmentFilter(e.target.value)}
@@ -97,7 +97,7 @@ export const InventoryCatalog = () => {
           </div>
 
           <div>
-            <label className="block text-slate-400 mb-1 font-medium">Location / Room</label>
+            <label className="block text-slate-700 mb-1 font-medium">Location / Room</label>
             <select
               value={roomFilter}
               onChange={(e) => setRoomFilter(e.target.value)}
@@ -113,7 +113,7 @@ export const InventoryCatalog = () => {
           </div>
 
           <div>
-            <label className="block text-slate-400 mb-1 font-medium">Condition Status</label>
+            <label className="block text-slate-700 mb-1 font-medium">Condition Status</label>
             <select
               value={conditionFilter}
               onChange={(e) => setConditionFilter(e.target.value)}
@@ -156,7 +156,7 @@ export const InventoryCatalog = () => {
                         <span className="text-[11px] font-bold text-indigo-400 uppercase tracking-wider">
                           {item.type}
                         </span>
-                        <h3 className="font-bold text-white text-base leading-tight mt-0.5">
+                        <h3 className="font-bold text-slate-900 text-base leading-tight mt-0.5">
                           {item.name}
                         </h3>
                       </div>
@@ -170,7 +170,7 @@ export const InventoryCatalog = () => {
                   <div className="mt-4 p-3 rounded-xl bg-slate-900/60 border border-slate-800 space-y-1.5 text-xs">
                     <div className="flex items-center justify-between text-slate-300">
                       <span className="text-slate-500">Room Location:</span>
-                      <span className="font-bold text-white flex items-center gap-1">
+                      <span className="font-bold text-slate-900 flex items-center gap-1">
                         <IconRoom className="w-3.5 h-3.5 text-indigo-400" />
                         Room {item.roomNumber}
                       </span>

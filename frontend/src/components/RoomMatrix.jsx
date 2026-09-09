@@ -9,7 +9,7 @@ export const RoomMatrix = () => {
     <div className="space-y-6">
       
       <div className="glass-panel p-5 rounded-2xl border border-slate-800/80">
-        <h2 className="text-xl font-bold text-white">College Physical Infrastructure Matrix</h2>
+        <h2 className="text-xl font-bold text-slate-900">College Physical Infrastructure Matrix</h2>
         <p className="text-xs text-slate-400 mt-1">
           Interactive room-by-room physical infrastructure health & equipment status overview.
         </p>
@@ -41,10 +41,10 @@ export const RoomMatrix = () => {
                     <IconRoom className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-extrabold text-white text-lg leading-tight">
+                    <h3 className="font-extrabold text-slate-900 text-lg leading-tight">
                       Room {room.number}
                     </h3>
-                    <div className="text-xs text-slate-400 flex items-center gap-2 mt-0.5">
+                    <div className="text-xs text-slate-600 flex items-center gap-2 mt-0.5">
                       <span>{room.type}</span>
                       <span>•</span>
                       <span>{room.block}</span>
@@ -62,7 +62,7 @@ export const RoomMatrix = () => {
                   }`}>
                     {roomHealth}% Health
                   </span>
-                  <div className="text-[11px] text-slate-500 mt-1">Cap: {room.capacity} seats</div>
+                  <div className="text-[11px] text-slate-600 mt-1">Cap: {room.capacity} seats</div>
                 </div>
               </div>
 
