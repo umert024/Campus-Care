@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # CampusFix — updated project
 
 CampusFix now has a violet/indigo visual theme and username-based personal accounts.
