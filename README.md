@@ -29,4 +29,3 @@ Then open the address printed by Vite (normally `http://localhost:3000`).
 For this classroom/demo project, user records are stored in memory by the backend while it is running, with a browser-local fallback when the backend is not running. Add a database and password hashing before using it in production.
 =======
 # Campus-Care
->>>>>>> a4cd35d65b9fc357612ee226a0b826305e277040
